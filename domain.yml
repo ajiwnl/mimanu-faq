@@ -1,0 +1,52 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - faq_isp_partnership
+  - faq_speed_index
+  - faq_netflix_servers
+  - faq_netflix_domains
+  - faq_peering_request
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Alvin John's Training bot."
+
+  utter_faq_isp_partnership:
+  - text: "Review the information about our engagement process and follow the steps described there."
+
+  utter_faq_speed_index:
+  - text: "Speed Index ratings reflect the average performance during prime time. More details here: https://ispspeedindex.netflix.com/about/"
+
+  utter_faq_netflix_servers:
+  - text: "Netflix clients interact with multiple network destinations. ISPs should contact their Open Connect Partner Engagement Manager for assistance."
+
+  utter_faq_netflix_domains:
+  - text: "Netflix maintains a list of domain names here: https://openconnect.netflix.com/mobiledeliverydomains.txt"
+
+  utter_faq_peering_request:
+  - text: "Please send an inquiry using our Public Peering Request form. The Netflix interconnection team will consider it for future expansion."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,90 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: faq_isp_partnership
+  examples: |
+    - I want to partner with Netflix as an ISP.
+    - How can I become an ISP partner of Netflix?
+    - I am an ISP interested in partnering with Netflix. What should I do?
+    - How do I collaborate with Netflix as an ISP?
+
+- intent: faq_speed_index
+  examples: |
+    - How do you calculate Speed Index?
+    - What is the Speed Index measurement method?
+    - How do you compute the numbers used in the ISP Speed Index?
+    - What factors affect the Speed Index ratings?
+
+- intent: faq_netflix_servers
+  examples: |
+    - How can I determine which servers Netflix video and image traffic is coming from?
+    - How do I check the Netflix content delivery servers?
+    - What Netflix servers are used for video and image traffic?
+
+- intent: faq_netflix_domains
+  examples: |
+    - What domain names does Netflix have in use on the network?
+    - Where can I find the list of Netflix domains?
+    - Does Netflix have a public list of domain names?
+
+- intent: faq_peering_request
+  examples: |
+    - What if I want to peer at a location where AS 2906 is not currently present?
+    - How can I request peering with Netflix?
+    - Can I peer with Netflix at a location where AS 2906 is unavailable?
+
