@@ -1,0 +1,42 @@
+version: "3.1"
+
+rules:
+  - rule: Respond with a greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Respond to ISP partnership FAQ
+    steps:
+      - intent: faq_isp_partnership
+      - action: utter_faq_isp_partnership
+
+  - rule: Respond to Speed Index FAQ
+    steps:
+      - intent: faq_speed_index
+      - action: utter_faq_speed_index
+
+  - rule: Respond to Netflix servers FAQ
+    steps:
+      - intent: faq_netflix_servers
+      - action: utter_faq_netflix_servers
+
+  - rule: Respond to Netflix domains FAQ
+    steps:
+      - intent: faq_netflix_domains
+      - action: utter_faq_netflix_domains
+
+  - rule: Respond to Peering request FAQ
+    steps:
+      - intent: faq_peering_request
+      - action: utter_faq_peering_request
